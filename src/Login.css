@@ -1,0 +1,108 @@
+.login {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login > h1 {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login__container > form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.login__container > form > h5 {
+  margin: 5px;
+  font-size: medium;
+  font-weight: normal;
+  text-align: center;
+}
+
+.login__containerInput1 {
+  background-color: #f5f8fa;
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.login__containerInput2 {
+  background-color: #f5f8fa;
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.login__logo {
+  width: 50px;
+  color: #1da1f2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.signup__logo {
+  width: 50px;
+  color: #1da1f2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.signup__containerInput1 {
+  background-color: #f5f8fa;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.signup__containerInput2 {
+  background-color: #f5f8fa;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.login__logo {
+  width: 50px;
+  color: #1da1f2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.signup__logo {
+  width: 50px;
+  color: #1da1f2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login__signInButton {
+  background-color: #8ed0f9 !important;
+  border-radius: 20px !important;
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+  text-transform: initial !important;
+  color: white !important;
+}
+
+.login__registerButton {
+  background-color: #8ed0f9 !important;
+  border-radius: 20px !important;
+  padding: 10px !important;
+  text-transform: initial !important;
+  color: white !important;
+  width: 500px !important;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}

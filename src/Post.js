@@ -6,9 +6,16 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
+import DeleteIcon from "@material-ui/icons/Delete";
+import db from "./firebase";
 
 const Post = forwardRef(
-  ({ displayName, username, verified, text, image, avatar }, ref) => {
+  ({ index, displayName, username, verified, text, image, avatar }, ref) => {
+    const deletePost = (e) => {
+      e.preventDefault();
+      db.collection("posts").doc(index).delete();
+    };
+
     return (
       <div className="post" ref={ref}>
         <div className="post__avatar">
@@ -30,11 +37,17 @@ const Post = forwardRef(
             </div>
           </div>
           <img src={image} alt="" />
+
           <div className="post__footer">
             <ChatBubbleOutlineIcon fontSize="small" />
             <RepeatIcon fontSize="small" />
             <FavoriteBorderIcon fontSize="small" />
             <PublishIcon fontSize="small" />
+            <DeleteIcon
+              className="post__footerDelete"
+              onClick={deletePost}
+              fontSize="small"
+            />
           </div>
         </div>
       </div>

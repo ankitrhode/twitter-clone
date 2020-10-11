@@ -11,13 +11,13 @@ function TweetBox() {
     e.preventDefault();
 
     db.collection("posts").add({
-      displayName: "Rafeh Qazi",
-      username: "cleverqazi",
+      displayName: "Ankit",
+      username: "Ankit77372326",
       verified: true,
       text: tweetMessage,
       image: tweetImage,
       avatar:
-        "https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png",
+        "https://media-exp1.licdn.com/dms/image/C4D03AQGq6ZGWsGhz0g/profile-displayphoto-shrink_400_400/0?e=1605744000&v=beta&t=lh_SfY9b46M0HjdfBltLOL2tUEl_ef1d3CYlEmlIT6E",
     });
 
     setTweetMessage("");
@@ -28,7 +28,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
-          <Avatar src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png" />
+          <Avatar src="https://media-exp1.licdn.com/dms/image/C4D03AQGq6ZGWsGhz0g/profile-displayphoto-shrink_400_400/0?e=1605744000&v=beta&t=lh_SfY9b46M0HjdfBltLOL2tUEl_ef1d3CYlEmlIT6E" />
           <input
             onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage}
